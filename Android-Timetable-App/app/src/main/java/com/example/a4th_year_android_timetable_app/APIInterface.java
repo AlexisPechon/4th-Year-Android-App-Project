@@ -6,6 +6,6 @@ import retrofit2.Call;
 import retrofit2.http.GET;
 
 public interface APIInterface {
-    @GET("/posts")
+    @GET("api/groute/404/0")
     Call<List<Posts>> getPosts();
 }

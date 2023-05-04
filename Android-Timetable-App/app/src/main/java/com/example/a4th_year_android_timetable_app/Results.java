@@ -3,8 +3,7 @@ package com.example.a4th_year_android_timetable_app;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class Posts {
-
+public class Results {
     @SerializedName("route_short_name")
     @Expose
     private final String routeShortName;
@@ -12,7 +11,7 @@ public class Posts {
     @Expose
     private final String routeLongName;
 
-    public Posts(String routeShortName, String routeLongName) {
+    public Results(String routeShortName, String routeLongName) {
         this.routeShortName = routeShortName;
         this.routeLongName = routeLongName;
     }
