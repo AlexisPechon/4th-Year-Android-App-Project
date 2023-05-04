@@ -30,8 +30,8 @@ public class PostsAdapter extends RecyclerView.Adapter<PostsAdapter.ViewHolder> 
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        holder.tvTitle.setText(postList.get(position).getRouteShortName());
-        holder.tvBody.setText(postList.get(position).getRouteLongName());
+        holder.tvTitle.setText(postList.get(position).getTitle());
+        holder.tvBody.setText(postList.get(position).getBody());
 
     }
 
