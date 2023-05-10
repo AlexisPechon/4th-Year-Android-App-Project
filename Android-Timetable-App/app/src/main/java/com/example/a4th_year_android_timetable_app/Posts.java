@@ -3,6 +3,12 @@ package com.example.a4th_year_android_timetable_app;
 public class Posts {
 
     //Variables
+    private final String irish_language;
+    private final String irish_name;
+
+    private final String irish_stop_name;
+    private final String irish_arrival_time;
+    private final String irish_departure_time;
 
     private final String english_language;
     private final String name;
@@ -16,8 +22,16 @@ public class Posts {
 
     //Constructor
 
-    public Posts(String english_language,String name, String arrival_time, String departure_time, String stop_name,
+    public Posts(String irish_stop_name, String irish_language, String irish_name, String irish_arrival_time, String irish_departure_time,
+                 String english_language,String name, String arrival_time, String departure_time, String stop_name,
                  String second_stop_name, String second_arrival_time, String second_departure_time) {
+
+        this.irish_language = irish_language;
+        this.irish_name = irish_name;
+        this.irish_stop_name = irish_stop_name;
+        this.irish_arrival_time = arrival_time;
+        this.irish_departure_time = departure_time;
+
         this.english_language = english_language;
         this.name = name;
         this.arrival_time = arrival_time;
@@ -29,6 +43,28 @@ public class Posts {
     }
 
     //Getters
+
+
+    public String getIrish_language() {
+        return irish_language;
+    }
+
+    public String getIrish_name() {
+        return irish_name;
+    }
+
+    public String getIrish_stop_name(){
+        return irish_stop_name;
+    }
+
+
+    public String getIrish_arrival_time() {
+        return irish_arrival_time;
+    }
+
+    public String getIrish_departure_time() {
+        return irish_departure_time;
+    }
 
     public String getEnglish_language() {
         return english_language;
