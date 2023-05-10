@@ -32,6 +32,8 @@ public class PostsAdapter extends RecyclerView.Adapter<PostsAdapter.ViewHolder> 
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         holder.tvTitle.setText(postList.get(position).getName());
         holder.tvBody.setText(postList.get(position).getArrival_time());
+//        holder.tvBody.setText(postList.get(position).getDeparture_time());
+//        holder.tvBody.setText(postList.get(position).getStop_name());
 
     }
 

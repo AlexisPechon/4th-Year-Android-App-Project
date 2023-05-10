@@ -6,7 +6,7 @@ import retrofit2.Call;
 import retrofit2.http.GET;
 
 public interface APIInterface {
-    @GET("v1/62e67462-24c3-454c-b026-80d79247ef7c")
+    @GET("v1/d01eb520-0fb0-4f1a-9dca-280019c0d2da")
     //@GET("/posts")
     Call<List<Posts>> getPosts();
 }
