@@ -37,6 +37,11 @@ public class PostsAdapter extends RecyclerView.Adapter<PostsAdapter.ViewHolder> 
         holder.tvSubBody.setText(postList.get(position).getDeparture_time());
         holder.tvLocationBody.setText(postList.get(position).getStop_name());
 
+        holder.tvSubLocationBody.setText(postList.get(position).getSecond_stop_name());
+        holder.tvSubArrivalBody.setText(postList.get(position).getSecond_arrival_time());
+        holder.tvSubDepartureBody.setText(postList.get(position).getSecond_departure_time());
+
+
     }
 
     @Override
@@ -48,8 +53,11 @@ public class PostsAdapter extends RecyclerView.Adapter<PostsAdapter.ViewHolder> 
         TextView tvTitle;
         TextView tvBody;
         TextView tvSubBody;
-
         TextView tvLocationBody;
+
+        TextView tvSubLocationBody;
+        TextView tvSubArrivalBody;
+        TextView tvSubDepartureBody;
 
         public ViewHolder(@NonNull View itemView){
             super(itemView);
@@ -57,7 +65,10 @@ public class PostsAdapter extends RecyclerView.Adapter<PostsAdapter.ViewHolder> 
             tvBody = itemView.findViewById(R.id.tvBody); //Gets the id tvBody in the layout file
             tvSubBody = itemView.findViewById(R.id.tvSubBody);
             tvLocationBody = itemView.findViewById(R.id.tvLocationBody);
-        }
 
+            tvSubLocationBody = itemView.findViewById((R.id.tvSubLocationBody));
+            tvSubArrivalBody = itemView.findViewById((R.id.tvSubArrivalBody));
+            tvSubDepartureBody = itemView.findViewById(R.id.tvSubDepartureBody);
+        }
     }
 }
