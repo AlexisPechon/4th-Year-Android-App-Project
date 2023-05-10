@@ -32,6 +32,7 @@ public class PostsAdapter extends RecyclerView.Adapter<PostsAdapter.ViewHolder> 
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+        holder.tvEnglishBody.setText(postList.get(position).getEnglish_language());
         holder.tvTitle.setText(postList.get(position).getName());
         holder.tvBody.setText(postList.get(position).getArrival_time());
         holder.tvSubBody.setText(postList.get(position).getDeparture_time());
@@ -50,6 +51,7 @@ public class PostsAdapter extends RecyclerView.Adapter<PostsAdapter.ViewHolder> 
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder{
+        TextView tvEnglishBody;
         TextView tvTitle;
         TextView tvBody;
         TextView tvSubBody;
@@ -61,6 +63,7 @@ public class PostsAdapter extends RecyclerView.Adapter<PostsAdapter.ViewHolder> 
 
         public ViewHolder(@NonNull View itemView){
             super(itemView);
+            tvEnglishBody = itemView.findViewById(R.id.tvEnglishBody);
             tvTitle = itemView.findViewById(R.id.tvTitle); //Gets the id tvTitle in the layout file
             tvBody = itemView.findViewById(R.id.tvBody); //Gets the id tvBody in the layout file
             tvSubBody = itemView.findViewById(R.id.tvSubBody);

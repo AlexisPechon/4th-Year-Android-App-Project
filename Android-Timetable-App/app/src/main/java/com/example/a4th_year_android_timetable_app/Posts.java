@@ -3,6 +3,8 @@ package com.example.a4th_year_android_timetable_app;
 public class Posts {
 
     //Variables
+
+    private final String english_language;
     private final String name;
     private final String arrival_time;
     private final String departure_time;
@@ -14,8 +16,9 @@ public class Posts {
 
     //Constructor
 
-    public Posts(String name, String arrival_time, String departure_time, String stop_name,
+    public Posts(String english_language,String name, String arrival_time, String departure_time, String stop_name,
                  String second_stop_name, String second_arrival_time, String second_departure_time) {
+        this.english_language = english_language;
         this.name = name;
         this.arrival_time = arrival_time;
         this.departure_time = departure_time;
@@ -26,6 +29,11 @@ public class Posts {
     }
 
     //Getters
+
+    public String getEnglish_language() {
+        return english_language;
+    }
+
     public String getName() {
         return name;
     }

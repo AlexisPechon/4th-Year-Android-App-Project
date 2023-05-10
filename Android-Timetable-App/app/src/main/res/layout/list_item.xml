@@ -13,6 +13,33 @@
         android:padding="5dp">
 
         <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvEnglishBody"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This is a body of text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitle"/>
+
+
+        <TextView
+            android:id="@+id/tvLocationBody"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This is a body of text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvEnglishBody"/>
+
+        <TextView
             android:id="@+id/tvBody"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -59,24 +86,6 @@
             android:text="This is a body of text"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tvSubArrivalBody"/>
-
-        <TextView
-            android:id="@+id/tvLocationBody"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="This is a body of text"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvTitle"/>
-
-        <TextView
-            android:id="@+id/tvTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Title"
-            android:textColor="@color/black"
-            android:textSize="18dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
