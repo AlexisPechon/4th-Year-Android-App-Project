@@ -6,7 +6,7 @@ import retrofit2.Call;
 import retrofit2.http.GET;
 
 public interface APIInterface {
-    //@GET("api/routetimetable/404/0")
-    @GET("/posts")
+    @GET("v1/62e67462-24c3-454c-b026-80d79247ef7c")
+    //@GET("/posts")
     Call<List<Posts>> getPosts();
 }

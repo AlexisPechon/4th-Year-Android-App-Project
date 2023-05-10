@@ -6,7 +6,8 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class RetrofitClient {
 
     //List of the APIs that are being implemented
-    private static final String BASE_URL = "https://jsonplaceholder.typicode.com/";
+    //private static final String BASE_URL = "https://jsonplaceholder.typicode.com/";
+    private static final String BASE_URL = "https://mocki.io/";
 
     //The commented code below are the APIs that were going to implemented into my project
     //but were left in due to severe technical limitation of my project.

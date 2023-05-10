@@ -1,24 +1,21 @@
 package com.example.a4th_year_android_timetable_app;
 
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
-
 public class Posts {
 
-    private final String title;
-    private final String body;
+    private final String name;
+    private final String arrival_time;
 
-    public Posts(String title, String body) {
-        this.title = title;
-        this.body = body;
+    public Posts(String name, String arrival_time) {
+        this.name = name;
+        this.arrival_time = arrival_time;
     }
 
-    public String getTitle() {
-        return title;
+    public String getName() {
+        return name;
     }
 
-    public String getBody() {
-        return body;
+    public String getArrival_time() {
+        return arrival_time;
     }
 
     //    @SerializedName("route_short_name")
