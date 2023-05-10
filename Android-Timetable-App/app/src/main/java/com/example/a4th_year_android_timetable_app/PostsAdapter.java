@@ -8,6 +8,8 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 
+import org.w3c.dom.Text;
+
 import java.util.List;
 
 public class PostsAdapter extends RecyclerView.Adapter<PostsAdapter.ViewHolder> {
@@ -32,8 +34,8 @@ public class PostsAdapter extends RecyclerView.Adapter<PostsAdapter.ViewHolder> 
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         holder.tvTitle.setText(postList.get(position).getName());
         holder.tvBody.setText(postList.get(position).getArrival_time());
-//        holder.tvBody.setText(postList.get(position).getDeparture_time());
-//        holder.tvBody.setText(postList.get(position).getStop_name());
+        holder.tvSubBody.setText(postList.get(position).getDeparture_time());
+        holder.tvLocationBody.setText(postList.get(position).getStop_name());
 
     }
 
@@ -45,11 +47,16 @@ public class PostsAdapter extends RecyclerView.Adapter<PostsAdapter.ViewHolder> 
     public class ViewHolder extends RecyclerView.ViewHolder{
         TextView tvTitle;
         TextView tvBody;
+        TextView tvSubBody;
+
+        TextView tvLocationBody;
 
         public ViewHolder(@NonNull View itemView){
             super(itemView);
             tvTitle = itemView.findViewById(R.id.tvTitle); //Gets the id tvTitle in the layout file
             tvBody = itemView.findViewById(R.id.tvBody); //Gets the id tvBody in the layout file
+            tvSubBody = itemView.findViewById(R.id.tvSubBody);
+            tvLocationBody = itemView.findViewById(R.id.tvLocationBody);
         }
 
     }
