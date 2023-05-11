@@ -22,18 +22,20 @@ public class Posts {
     private final String arrival_time;
     private final String departure_time;
     private final String stop_name;
+    private final String route_id;
 
     //English Sub Variables
     private final String second_stop_name;
     private final String second_arrival_time;
     private final String second_departure_time;
+    private final String second_route_id;
 
     //Constructor
 
-    public Posts(String irish_stop_name, String irish_language, String irish_name, String irish_arrival_time, String irish_departure_time,
+    public Posts(String route_id, String irish_stop_name, String irish_language, String irish_name, String irish_arrival_time, String irish_departure_time,
                  String irish_second_stop_name,String irish_second_arrival_time, String irish_second_departure_time,
                  String english_language,String name, String arrival_time, String departure_time, String stop_name,
-                 String second_stop_name, String second_arrival_time, String second_departure_time) {
+                 String second_route_id,String second_stop_name, String second_arrival_time, String second_departure_time) {
 
         this.irish_language = irish_language;
         this.irish_name = irish_name;
@@ -50,10 +52,12 @@ public class Posts {
         this.arrival_time = arrival_time;
         this.departure_time = departure_time;
         this.stop_name = stop_name;
+        this.route_id = route_id;
 
         this.second_stop_name = second_stop_name;
         this.second_arrival_time = second_arrival_time;
         this.second_departure_time = second_departure_time;
+        this.second_route_id = second_route_id;
     }
 
     //Getters
@@ -111,6 +115,7 @@ public class Posts {
     public String getStop_name() {
         return stop_name;
     }
+    public String getRoute_id(){return route_id;}
 
     public String getSecond_stop_name() {
         return second_stop_name;
@@ -123,6 +128,7 @@ public class Posts {
     public String getSecond_departure_time() {
         return second_departure_time;
     }
+    public String getSecond_route_id(){return second_route_id;}
 
     //
     // SPACE

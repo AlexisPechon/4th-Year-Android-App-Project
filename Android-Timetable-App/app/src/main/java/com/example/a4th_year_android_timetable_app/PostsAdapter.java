@@ -50,11 +50,13 @@ public class PostsAdapter extends RecyclerView.Adapter<PostsAdapter.ViewHolder> 
         holder.tvBody.setText(postList.get(position).getArrival_time());
         holder.tvSubBody.setText(postList.get(position).getDeparture_time());
         holder.tvLocationBody.setText(postList.get(position).getStop_name());
+        holder.tvRouteIdBody.setText(postList.get(position).getRoute_id());
 
         //English Sub Version
         holder.tvSubLocationBody.setText(postList.get(position).getSecond_stop_name());
         holder.tvSubArrivalBody.setText(postList.get(position).getSecond_arrival_time());
         holder.tvSubDepartureBody.setText(postList.get(position).getSecond_departure_time());
+        holder.tvSubRouteIdBody.setText((postList).get(position).getSecond_route_id());
 
 
     }
@@ -83,12 +85,14 @@ public class PostsAdapter extends RecyclerView.Adapter<PostsAdapter.ViewHolder> 
         TextView tvTitle;
         TextView tvBody;
         TextView tvLocationBody;
+        TextView tvRouteIdBody;
 
         //English Sub Variables
         TextView tvSubBody;
         TextView tvSubLocationBody;
         TextView tvSubArrivalBody;
         TextView tvSubDepartureBody;
+        TextView tvSubRouteIdBody;
 
         public ViewHolder(@NonNull View itemView){
             super(itemView);
@@ -111,11 +115,13 @@ public class PostsAdapter extends RecyclerView.Adapter<PostsAdapter.ViewHolder> 
             tvBody = itemView.findViewById(R.id.tvBody); //Gets the id tvBody in the layout file
             tvSubBody = itemView.findViewById(R.id.tvSubBody);
             tvLocationBody = itemView.findViewById(R.id.tvLocationBody);
+            tvRouteIdBody = itemView.findViewById(R.id.tvRouteIdBody);
 
             //English Sub Variables
             tvSubLocationBody = itemView.findViewById((R.id.tvSubLocationBody));
             tvSubArrivalBody = itemView.findViewById((R.id.tvSubArrivalBody));
             tvSubDepartureBody = itemView.findViewById(R.id.tvSubDepartureBody);
+            tvSubRouteIdBody = itemView.findViewById((R.id.tvSubRouteIdBody));
         }
     }
 }
