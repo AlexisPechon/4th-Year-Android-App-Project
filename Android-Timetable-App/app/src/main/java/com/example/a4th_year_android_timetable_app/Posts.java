@@ -1,6 +1,17 @@
 package com.example.a4th_year_android_timetable_app;
 
+/*
+ * Author: Alexis Pechon
+ * Student ID: x19358953
+ * Date: 13/05/2023
+ * File: Posts.java
+ */
+
 public class Posts {
+
+    //The purpose of this class is to create the variables that are going to hold
+    //the appropriate information from the API calls, such as the location of the bus stop,
+    //stop_name, arrival_time and departure_time
 
     //Variables
 
@@ -130,9 +141,9 @@ public class Posts {
     }
     public String getSecond_route_id(){return second_route_id;}
 
-    //
-    // SPACE
-    //
+
+    //The code that was commented out below were the earliest attempts of extracting
+    //information from a different api.
 
     //    @SerializedName("route_short_name")
 //    @Expose

@@ -12,8 +12,18 @@ import org.w3c.dom.Text;
 
 import java.util.List;
 
+/*
+ * Author: Alexis Pechon
+ * Student ID: x19358953
+ * Date: 13/05/2023
+ * File: PostsAdapter.java
+ */
+
 public class PostsAdapter extends RecyclerView.Adapter<PostsAdapter.ViewHolder> {
-    //This class adds onto the items for the Recycler View
+    //This class adds onto the items for the Recycler View.
+    //The purpose of this class is to display the information from the API
+    //onto the mobile application using the variables that were created inside the
+    //Posts.java class and the IDs inside of the list_item.xml file in the res file.
 
     private final List<Posts> postList;
 

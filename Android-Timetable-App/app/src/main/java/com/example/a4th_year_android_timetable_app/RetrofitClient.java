@@ -3,11 +3,19 @@ package com.example.a4th_year_android_timetable_app;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
+/*
+ * Author: Alexis Pechon
+ * Student ID: x19358953
+ * Date: 13/05/2023
+ * File: RetrofitClient.java
+ */
+
 public class RetrofitClient {
 
+    private static final String BASE_URL = "https://mocki.io/"; //Variable to hold the API link
+
     //List of the APIs that are being implemented
-    //private static final String BASE_URL = "https://jsonplaceholder.typicode.com/";
-    private static final String BASE_URL = "https://mocki.io/";
+    //private static final String BASE_URL = "https://jsonplaceholder.typicode.com/"; //This was a placeholder cod
 
     //The commented code below are the APIs that were going to implemented into my project
     //but were left in due to severe technical limitation of my project.
@@ -22,6 +30,9 @@ public class RetrofitClient {
     private static Retrofit retrofit = null;
 
     public static APIInterface getRetrofitClient(){
+        //Creating the RetrofitClient Helper method
+        //This method is getting the RetrofitClient method which is accessible
+        //through the Retrofit Libraries
         if(retrofit == null){
             retrofit = new Retrofit.Builder()
                     .baseUrl(BASE_URL)

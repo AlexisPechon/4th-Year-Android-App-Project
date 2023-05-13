@@ -18,8 +18,21 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
+/*
+ * Author: Alexis Pechon
+ * Student ID: x19358953
+ * Date: 13/05/2023
+ * File: MainActivity.java
+ */
+
 public class MainActivity extends AppCompatActivity {
 
+    //The purpose of the MainActivity is to structure the way the main application
+    //would look when the app is launched.
+    //The following code shows how the information is structured and presented
+    //inside of the app.
+
+    //Variables
     RecyclerView recyclerView;
     ProgressBar progressBar;
     LinearLayoutManager layoutManager;
@@ -28,6 +41,10 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
+        //All of the GUI elements of the application, such as the RecyclerView
+        //will be generated all at once when the app is launched or executed.
+        //This method will be called when the app is launched and initialises the
+        //recycler views and progress bar.
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -57,6 +74,9 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onFailure(Call<List<Posts>> call, Throwable t) {
+                //If an error were to occur while trying to execute the app
+                //or displaying the information,
+                //this error method would be called to display an error message.
                 progressBar.setVisibility(View.GONE);
                 Toast.makeText(MainActivity.this,
                                 "Error: " + t.getMessage(),
