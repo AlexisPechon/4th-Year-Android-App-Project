@@ -14,7 +14,7 @@ import retrofit2.http.GET;
 
 
 public interface APIInterface {
-    @GET("v1/e428799a-a5f6-4f2c-b26c-5dc03e4e0548") //Getting the information from the API
+    @GET("v1/d4c0aabd-b03e-4086-9cae-3561a5f6c564") //Getting the information from the API
     //@GET("/posts")
     Call<List<Posts>> getPosts();
 }

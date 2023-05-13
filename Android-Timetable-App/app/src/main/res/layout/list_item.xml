@@ -154,12 +154,20 @@
             app:layout_constraintTop_toBottomOf="@+id/tvIrishArrivalBody"/>
 
         <TextView
+            android:id="@+id/tvIrishRouteIdBody"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvIrishDepartureBody"/>
+
+        <TextView
             android:id="@+id/tvEmptyFieldBody"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text=" "
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvIrishDepartureBody"/>
+            app:layout_constraintTop_toBottomOf="@+id/tvIrishRouteIdBody"/>
 
         <TextView
             android:id="@+id/tvIrishSubLocationBody"
@@ -184,6 +192,14 @@
             android:text="Title"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tvIrishSubArrivalBody"/>
+
+        <TextView
+            android:id="@+id/tvIrishSubRouteIdBody"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvIrishSubDepartureBody"/>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

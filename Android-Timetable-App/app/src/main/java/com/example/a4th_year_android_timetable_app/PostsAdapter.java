@@ -48,11 +48,13 @@ public class PostsAdapter extends RecyclerView.Adapter<PostsAdapter.ViewHolder> 
         holder.tvIrishLocationBody.setText(postList.get(position).getIrish_stop_name());
         holder.tvIrishArrivalBody.setText(postList.get(position).getIrish_arrival_time());
         holder.tvIrishDepartureBody.setText(postList.get(position).getIrish_departure_time());
+        holder.tvIrishRouteIdBody.setText(postList.get(position).getIrish_route_id());
 
         //Irish Sub Version
         holder.tvIrishSubLocationBody.setText((postList).get(position).getIrish_second_stop_name());
         holder.tvIrishSubArrivalBody.setText((postList).get(position).getIrish_second_arrival_time());
         holder.tvIrishSubDepartureBody.setText(postList.get(position).getIrish_second_departure_time());
+        holder.tvIrishSubRouteIdBody.setText(postList.get(position).getIrish_second_route_id());
 
         //English Version
         holder.tvEnglishBody.setText(postList.get(position).getEnglish_language());
@@ -83,12 +85,14 @@ public class PostsAdapter extends RecyclerView.Adapter<PostsAdapter.ViewHolder> 
         TextView tvIrishArrivalBody;
         TextView tvIrishDepartureBody;
         TextView tvIrishLocationBody;
+        TextView tvIrishRouteIdBody;
 
         //Irish Sub Version
         TextView tvIrishSubBody;
         TextView tvIrishSubLocationBody;
         TextView tvIrishSubArrivalBody;
         TextView tvIrishSubDepartureBody;
+        TextView tvIrishSubRouteIdBody;
 
         //English Variables
         TextView tvEnglishBody;
@@ -113,11 +117,13 @@ public class PostsAdapter extends RecyclerView.Adapter<PostsAdapter.ViewHolder> 
             tvIrishLocationBody = itemView.findViewById(R.id.tvIrishLocationBody);
             tvIrishArrivalBody = itemView.findViewById(R.id.tvIrishArrivalBody);
             tvIrishDepartureBody = itemView.findViewById(R.id.tvIrishDepartureBody);
+            tvIrishRouteIdBody = itemView.findViewById(R.id.tvIrishRouteIdBody);
 
             //Irish Sub Variables
             tvIrishSubLocationBody = itemView.findViewById(R.id.tvIrishSubLocationBody);
             tvIrishSubArrivalBody = itemView.findViewById(R.id.tvIrishSubArrivalBody);
             tvIrishSubDepartureBody = itemView.findViewById(R.id.tvIrishSubDepartureBody);
+            tvIrishSubRouteIdBody = itemView.findViewById(R.id.tvIrishSubRouteIdBody);
 
             //English Variables
             tvEnglishBody = itemView.findViewById(R.id.tvEnglishBody);
